@@ -1,10 +1,21 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> -->
+    <NavComponent/>
   </nav>
   <router-view/>
 </template>
+
+<script>
+import NavComponent from "@/components/NavComponent.vue";
+// import { mapActions } from "vuex";
+export default{
+  components: {
+    NavComponent,
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
